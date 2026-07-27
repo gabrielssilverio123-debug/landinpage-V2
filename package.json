@@ -2,5 +2,8 @@
   "name": "project",
   "version": "1.0.0",
   "private": true,
-  "description": "Landing page - Ansiedade"
+  "description": "Landing page - Ansiedade",
+  "scripts": {
+    "build": "echo 'No build step required'"
+  }
 }
