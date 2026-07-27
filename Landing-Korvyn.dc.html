@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#F6F2EB}
+  a{color:#33493C}a:hover{color:#C0894A}
+  .lp h1,.lp h2,.lp h3{text-wrap:balance;margin:0}
+  .lp p{text-wrap:pretty}
+  .lp-car{scrollbar-width:none}
+  .lp-car::-webkit-scrollbar{display:none}
+  .lp-cta{transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
+  .lp-cta:hover{transform:translateY(-2px);filter:brightness(1.05)}
+  details.lp-faq summary{list-style:none;cursor:pointer}
+  details.lp-faq summary::-webkit-details-marker{display:none}
+  details.lp-faq .lp-plus{transition:transform .2s ease}
+  details.lp-faq[open] .lp-plus{transform:rotate(45deg)}
+  @keyframes lpMarq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .lp-marq{display:flex;gap:22px;width:max-content;animation:lpMarq 36s linear infinite}
+  .lp-marq:hover{animation-play-state:paused}
+  .lp-marq img{transition:transform .3s ease}
+  .lp-marq img:hover{transform:translateY(-6px)}
+  @media (prefers-reduced-motion:reduce){.lp-marq{animation:none}}
+  .lp-float{display:none}
+  @media (max-width:820px){.lp-float{display:block}}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</helmet>
+<div class="lp" style="font-family:'Nunito Sans',sans-serif;color:#2B2E29;background:#F6F2EB;">
+
+<!-- ================= HERO ================= -->
+<header style="background:radial-gradient(120% 90% at 80% -10%, #40584a 0%, #33493C 55%, #26382D 100%);color:#FBF8F2;padding:clamp(48px,8vw,84px) 20px clamp(28px,4vw,44px);text-align:center;">
+  <div style="max-width:820px;margin:0 auto;">
+    <div style="display:inline-flex;align-items:center;gap:8px;color:#E0B579;font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:11.5px;">✿ Programa Completo: Vença a Ansiedade</div>
+    <h1 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(30px,6vw,52px);line-height:1.08;letter-spacing:-.01em;margin-top:18px;">Pare de lutar contra a comida como se o problema fosse <em style="color:#E0B579;">falta de força de vontade</em>.</h1>
+    <p style="font-size:clamp(16px,2.4vw,20px);line-height:1.6;color:#E9E3D6;max-width:40rem;margin:22px auto 0;">A ansiedade desperta a fome emocional — e ninguém te ensinou a interromper esse impulso. Este guia mostra, passo a passo, como recuperar o controle antes que a vontade vire culpa.</p>
+    <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(224,181,121,.14);border:1px solid rgba(224,181,121,.4);border-radius:999px;padding:9px 20px;margin-top:22px;font-size:clamp(12px,1.8vw,14px);color:#EFE4CF;flex-wrap:wrap;justify-content:center;">
+      <span style="color:#E0B579;flex-shrink:0;">★</span><span>Método validado nos Estados Unidos — agora no Brasil por um preço acessível</span>
+    </div>
+    <div style="display:flex;justify-content:center;margin-top:30px;">
+      <a class="lp-cta" href="#oferta" style="display:inline-flex;align-items:center;justify-content:center;background:#C0894A;color:#fff;font-weight:800;border-radius:999px;padding:17px 34px;font-size:16px;text-decoration:none;box-shadow:0 12px 26px -10px rgba(165,115,47,.75);">QUERO RECUPERAR MEU CONTROLE ALIMENTAR →</a>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 18px;margin-top:18px;font-size:13.5px;color:#CBD3C6;">
+      <span><span style="color:#E0B579;">★★★★★</span> <strong style="color:#FBF8F2;">4.8 de 5</strong> · 12.455 reviews</span>
+      <span>✓ Acesso imediato</span>
+      <span>🛡 Garantia de 7 dias</span>
+    </div>
+  </div>
+  <div style="margin-top:40px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);">
+    <div class="lp-marq">
+      <img src="assets/lp/combo.jpg" alt="Programa Completo Vença a Ansiedade" style="height:clamp(220px,30vw,320px);width:auto;border-radius:14px;box-shadow:0 24px 50px -18px rgba(15,25,19,.6);">
+      <img src="assets/lp/guia.jpg" alt="Guia Anti Compulsão Emocional" style="height:clamp(220px,30vw,320px);width:auto;border-radius:14px;box-shadow:0 24px 50px -18px rgba(15,25,19,.6);">
+      <img src="assets/lp/sos.jpg" alt="SOS Ansiedade" style="height:clamp(220px,30vw,320px);width:auto;border-radius:14px;box-shadow:0 24px 50px -18px rgba(15,25,19,.6);">
+      <img src="assets/lp/cardapio.jpg" alt="Cardápio da Calma" style="height:clamp(220px,30vw,320px);width:auto;border-radius:14px;box-shadow:0 24px 50px -18px rgba(15,25,19,.6);">
+      <img src="assets/lp/corpo.jpg" alt="Corpo Calmo" style="height:clamp(220px,30vw,320px);width:auto;border-radius:14px;box-shadow:0 24px 50px -18px rgba(15,25,19,.6);">
+      <img src="assets/lp/diario.jpg" alt="Diário dos Gatilhos" style="height:clamp(220px,30vw,320px);width:auto;border-radius:14px;box-shadow:0 24px 50px -18px rgba(15,25,19,.6);">
+      <img src="assets/lp/combo.jpg" alt="" style="height:clamp(220px,30vw,320px);width:auto;border-radius:14px;box-shadow:0 24px 50px -18px rgba(15,25,19,.6);">
+      <img src="assets/lp/guia.jpg" alt="" style="height:clamp(220px,30vw,320px);width:auto;border-radius:14px;box-shadow:0 24px 50px -18px rgba(15,25,19,.6);">
+      <img src="assets/lp/sos.jpg" alt="" style="height:clamp(220px,30vw,320px);width:auto;border-radius:14px;box-shadow:0 24px 50px -18px rgba(15,25,19,.6);">
+      <img src="assets/lp/cardapio.jpg" alt="" style="height:clamp(220px,30vw,320px);width:auto;border-radius:14px;box-shadow:0 24px 50px -18px rgba(15,25,19,.6);">
+      <img src="assets/lp/corpo.jpg" alt="" style="height:clamp(220px,30vw,320px);width:auto;border-radius:14px;box-shadow:0 24px 50px -18px rgba(15,25,19,.6);">
+      <img src="assets/lp/diario.jpg" alt="" style="height:clamp(220px,30vw,320px);width:auto;border-radius:14px;box-shadow:0 24px 50px -18px rgba(15,25,19,.6);">
+    </div>
+  </div>
+</header>
+
+<!-- ================= PROBLEMA / SOLUÇÃO ================= -->
+<section style="background:#F6F2EB;padding:clamp(56px,8vw,88px) 20px;">
+  <div style="max-width:1020px;margin:0 auto;display:flex;flex-wrap:wrap;gap:36px;align-items:center;">
+  <div style="flex:1 1 400px;max-width:660px;">
+    <div style="color:#C0894A;font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:11.5px;">Talvez você se reconheça nisso</div>
+    <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(25px,4vw,36px);line-height:1.15;color:#33493C;margin-top:14px;">Na maioria das vezes, o problema não é a comida — nem falta de disciplina.</h2>
+    <p style="font-size:17px;line-height:1.7;color:#5D6259;margin:22px 0 0;">Você passa o dia fazendo tudo "certo". Mas basta um dia estressante, uma preocupação, alguns minutos de ansiedade — e surge aquela vontade quase incontrolável de comer. Quando percebe, já aconteceu. Depois vêm a culpa e a promessa de recomeçar na segunda.</p>
+    <p style="font-size:17px;line-height:1.7;color:#2B2E29;font-weight:700;margin:16px 0 0;">O que ninguém te ensinou é como a ansiedade comanda esse ciclo — e como interrompê-lo.</p>
+    <div style="background:#FBF8F2;border:1px solid #E2DBCF;border-left:4px solid #C0894A;border-radius:0 14px 14px 0;padding:20px 24px;margin-top:24px;">
+      <p style="font-size:16px;line-height:1.65;color:#5D6259;margin:0;">É exatamente aqui que o <strong style="color:#33493C;">Guia Anti Compulsão Emocional</strong> entra: um método validado nos Estados Unidos, agora disponível no Brasil por um preço acessível, para você entender o que acontece dentro de você e agir <em>no momento em que o impulso aparece</em>.</p>
+    </div>
+  </div>
+  <div style="flex:1 1 300px;min-width:260px;">
+    <img src="assets/lp/people/problema.jpg" alt="Mulher pensativa" style="width:100%;height:auto;border-radius:18px;display:block;box-shadow:0 20px 44px -24px rgba(40,50,40,.4);">
+  </div>
+  </div>
+</section>
+
+<!-- ================= PROVA SOCIAL ================= -->
+<section style="background:#33493C;padding:clamp(56px,8vw,88px) 0;">
+  <div style="max-width:1120px;margin:0 auto;padding:0 20px;text-align:center;">
+    <div style="color:#E0B579;font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:11.5px;">Quem já aplicou</div>
+    <div style="display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:16px;">
+      <span style="color:#E0B579;font-size:26px;letter-spacing:2px;">★★★★★</span>
+      <span style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(26px,4vw,38px);color:#FBF8F2;">4.8 de 5 estrelas</span>
+    </div>
+    <p style="color:#CBD3C6;font-size:15.5px;margin:8px 0 0;">Baseado em <strong style="color:#FBF8F2;">12.455 reviews</strong> de leitoras</p>
+  </div>
+  <div style="position:relative;max-width:1180px;margin:34px auto 0;">
+    <div class="lp-car" id="depo-car" style="display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 24px 18px;">
+      <sc-for list="{{ depoimentos }}" as="d" hint-placeholder-count="4">
+        <figure style="flex:0 0 min(80vw,340px);scroll-snap-align:center;background:#FBF8F2;border-radius:18px;padding:22px 22px 20px;margin:0;box-shadow:0 18px 40px -28px rgba(0,0,0,.55);display:flex;flex-direction:column;">
+          <div style="color:#C0894A;font-size:15px;letter-spacing:2px;">★★★★★</div>
+          <blockquote style="font-size:14.5px;line-height:1.6;color:#2B2E29;margin:12px 0 0;flex:1;">"{{ d.texto }}"</blockquote>
+          <figcaption style="display:flex;align-items:center;gap:12px;margin-top:16px;">
+            <sc-if value="{{ d.temFoto }}" hint-placeholder-val="{{ false }}"><img src="{{ d.foto }}" alt="" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;"></sc-if><sc-if value="{{ d.semFoto }}" hint-placeholder-val="{{ true }}"><span style="width:40px;height:40px;border-radius:50%;background:#DCE4DA;color:#33493C;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;flex-shrink:0;">{{ d.inicial }}</span></sc-if>
+            <span style="font-size:13px;color:#5D6259;text-align:left;"><strong style="color:#33493C;display:block;">{{ d.nome }}</strong>{{ d.cidade }}</span>
+          </figcaption>
+        </figure>
+      </sc-for>
+    </div>
+    <div style="display:flex;justify-content:center;gap:12px;margin-top:6px;">
+      <button onClick="{{ prevDepo }}" aria-label="Depoimentos anteriores" style="width:46px;height:46px;border-radius:50%;border:1.5px solid rgba(251,248,242,.4);background:transparent;color:#FBF8F2;font-size:19px;cursor:pointer;">←</button>
+      <button onClick="{{ nextDepo }}" aria-label="Próximos depoimentos" style="width:46px;height:46px;border-radius:50%;border:none;background:#C0894A;color:#fff;font-size:19px;cursor:pointer;box-shadow:0 10px 22px -10px rgba(165,115,47,.8);">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BENEFÍCIOS ================= -->
+<section style="background:#EFE9DE;padding:clamp(56px,8vw,88px) 20px;">
+  <div style="max-width:1020px;margin:0 auto;">
+    <div style="text-align:center;">
+      <div style="color:#C0894A;font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:11.5px;">O que muda pra você</div>
+      <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(25px,4vw,38px);line-height:1.13;color:#33493C;max-width:36rem;margin:14px auto 0;">Imagine viver sem sentir que a comida controla suas emoções</h2>
+    </div>
+    <div class="lp-car" id="ben-car" style="display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:36px;padding:6px 4px 14px;">
+      <div style="flex:0 0 min(80vw,300px);scroll-snap-align:center;background:#FBF8F2;border:1px solid #E2DBCF;border-radius:16px;padding:22px;"><div style="font-size:24px;">🌿</div><h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:18px;color:#33493C;margin-top:10px;">Fome física × fome emocional</h3><p style="font-size:14.5px;line-height:1.6;color:#5D6259;margin:8px 0 0;">Pare de confundir ansiedade com fome e saiba quando o corpo precisa de alimento — e quando a emoção pede acolhimento.</p></div>
+      <div style="flex:0 0 min(80vw,300px);scroll-snap-align:center;background:#FBF8F2;border:1px solid #E2DBCF;border-radius:16px;padding:22px;"><div style="font-size:24px;">🧠</div><h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:18px;color:#33493C;margin-top:10px;">Gatilhos identificados</h3><p style="font-size:14.5px;line-height:1.6;color:#5D6259;margin:8px 0 0;">Descubra o que dispara a sua compulsão e ganhe consciência antes que o impulso tome conta.</p></div>
+      <div style="flex:0 0 min(80vw,300px);scroll-snap-align:center;background:#FBF8F2;border:1px solid #E2DBCF;border-radius:16px;padding:22px;"><div style="font-size:24px;">💛</div><h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:18px;color:#33493C;margin-top:10px;">Fim do ciclo de culpa</h3><p style="font-size:14.5px;line-height:1.6;color:#5D6259;margin:8px 0 0;">Entenda por que a culpa alimenta novos episódios — e quebre o ciclo com gentileza, não punição.</p></div>
+      <div style="flex:0 0 min(80vw,300px);scroll-snap-align:center;background:#FBF8F2;border:1px solid #E2DBCF;border-radius:16px;padding:22px;"><div style="font-size:24px;">🌸</div><h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:18px;color:#33493C;margin-top:10px;">Ferramentas para o impulso</h3><p style="font-size:14.5px;line-height:1.6;color:#5D6259;margin:8px 0 0;">Técnicas de poucos minutos para reduzir a vontade de comer por emoção — na hora em que ela aparece.</p></div>
+      <div style="flex:0 0 min(80vw,300px);scroll-snap-align:center;background:#FBF8F2;border:1px solid #E2DBCF;border-radius:16px;padding:22px;"><div style="font-size:24px;">🌙</div><h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:18px;color:#33493C;margin-top:10px;">Noites mais tranquilas</h3><p style="font-size:14.5px;line-height:1.6;color:#5D6259;margin:8px 0 0;">Se o descontrole vem à noite, você terá um plano prático para esse momento específico.</p></div>
+      <div style="flex:0 0 min(80vw,300px);scroll-snap-align:center;background:#FBF8F2;border:1px solid #E2DBCF;border-radius:16px;padding:22px;"><div style="font-size:24px;">🤍</div><h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:18px;color:#33493C;margin-top:10px;">Paz com o próprio corpo</h3><p style="font-size:14.5px;line-height:1.6;color:#5D6259;margin:8px 0 0;">Substitua a autocrítica constante por compreensão, autocuidado e respeito ao seu processo.</p></div>
+    </div>
+    <div style="display:flex;justify-content:center;gap:12px;margin-top:4px;">
+      <button onClick="{{ benPrev }}" aria-label="Anterior" style="width:44px;height:44px;border-radius:50%;border:1.5px solid #C8BFAE;background:transparent;color:#33493C;font-size:18px;cursor:pointer;">←</button>
+      <button onClick="{{ benNext }}" aria-label="Próximo" style="width:44px;height:44px;border-radius:50%;border:none;background:#C0894A;color:#fff;font-size:18px;cursor:pointer;box-shadow:0 10px 22px -10px rgba(165,115,47,.8);">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTEÚDO DO PROGRAMA ================= -->
+<section style="background:#F6F2EB;padding:clamp(56px,8vw,88px) 20px;">
+  <div style="max-width:1020px;margin:0 auto;">
+    <div style="text-align:center;">
+      <div style="color:#C0894A;font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:11.5px;">Dentro do guia</div>
+      <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(25px,4vw,38px);line-height:1.13;color:#33493C;max-width:38rem;margin:14px auto 0;">Um caminho em 5 etapas — da consciência à rotina</h2>
+      <p style="font-size:16.5px;line-height:1.6;color:#5D6259;max-width:36rem;margin:16px auto 0;">Nada de teoria infinita: linguagem simples, quadros-resumo, checklists e exercícios de aplicação imediata.</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;margin-top:40px;">
+      <div style="flex:1 1 420px;display:flex;flex-direction:column;gap:12px;">
+        <div style="display:flex;gap:16px;align-items:flex-start;background:#FBF8F2;border:1px solid #E2DBCF;border-radius:14px;padding:16px 18px;"><span style="width:38px;height:38px;border-radius:50%;background:#DCE4DA;color:#33493C;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;flex-shrink:0;">1</span><div><strong style="font-size:15.5px;color:#33493C;">Entenda por que você come sem estar com fome</strong><div style="font-size:13.5px;color:#5D6259;line-height:1.5;margin-top:3px;">Fome física × emocional e o ciclo ansiedade → compulsão → culpa.</div></div></div>
+        <div style="display:flex;gap:16px;align-items:flex-start;background:#FBF8F2;border:1px solid #E2DBCF;border-radius:14px;padding:16px 18px;"><span style="width:38px;height:38px;border-radius:50%;background:#DCE4DA;color:#33493C;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;flex-shrink:0;">2</span><div><strong style="font-size:15.5px;color:#33493C;">Descubra seus gatilhos emocionais</strong><div style="font-size:13.5px;color:#5D6259;line-height:1.5;margin-top:3px;">Reconheça seus padrões antes que o impulso apareça.</div></div></div>
+        <div style="display:flex;gap:16px;align-items:flex-start;background:#FBF8F2;border:1px solid #E2DBCF;border-radius:14px;padding:16px 18px;"><span style="width:38px;height:38px;border-radius:50%;background:#DCE4DA;color:#33493C;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;flex-shrink:0;">3</span><div><strong style="font-size:15.5px;color:#33493C;">Entenda por que a ansiedade trava o emagrecimento</strong><div style="font-size:13.5px;color:#5D6259;line-height:1.5;margin-top:3px;">Por que você segura de dia e perde o controle à noite — e por que dietas restritivas pioram tudo.</div></div></div>
+        <div style="display:flex;gap:16px;align-items:flex-start;background:#FBF8F2;border:1px solid #E2DBCF;border-radius:14px;padding:16px 18px;"><span style="width:38px;height:38px;border-radius:50%;background:#DCE4DA;color:#33493C;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;flex-shrink:0;">4</span><div><strong style="font-size:15.5px;color:#33493C;">Ferramentas para interromper o impulso</strong><div style="font-size:13.5px;color:#5D6259;line-height:1.5;margin-top:3px;">Respiração SOS, Pausa Consciente e estratégias para o momento crítico.</div></div></div>
+        <div style="display:flex;gap:16px;align-items:flex-start;background:#FBF8F2;border:1px solid #E2DBCF;border-radius:14px;padding:16px 18px;"><span style="width:38px;height:38px;border-radius:50%;background:#DCE4DA;color:#33493C;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;flex-shrink:0;">5</span><div><strong style="font-size:15.5px;color:#33493C;">Construa uma rotina que trabalha a seu favor</strong><div style="font-size:13.5px;color:#5D6259;line-height:1.5;margin-top:3px;">Sono, alimentação, movimento e ambiente — sem cobranças excessivas.</div></div></div>
+      </div>
+      <div style="flex:1 1 340px;min-width:280px;">
+        <img src="assets/lp/conteudo-guia.jpg" alt="Páginas internas do Guia Anti Compulsão Emocional" style="width:100%;height:auto;border-radius:18px;display:block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BÔNUS ================= -->
+<section style="background:#EFE9DE;padding:clamp(56px,8vw,88px) 0;">
+  <div style="max-width:1120px;margin:0 auto;padding:0 20px;text-align:center;">
+    <div style="color:#C0894A;font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:11.5px;">Presentes exclusivos</div>
+    <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(25px,4vw,38px);line-height:1.13;color:#33493C;max-width:36rem;margin:14px auto 0;">No Plano Completo você leva 4 bônus</h2>
+    <p style="font-size:16px;color:#5D6259;max-width:34rem;margin:14px auto 0;">Criados para os momentos exatos em que a ansiedade costuma falar mais alto.</p>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:18px;padding:34px 20px 10px;max-width:760px;margin:0 auto;">
+    <div style="background:#FBF8F2;border:1px solid #E2DBCF;border-radius:18px;overflow:hidden;display:flex;flex-wrap:wrap;align-items:stretch;">
+      <img src="assets/lp/sos.jpg" alt="SOS Ansiedade" style="flex:1 1 200px;max-width:300px;min-width:180px;width:100%;object-fit:cover;display:block;">
+      <div style="padding:18px 20px 20px;text-align:left;flex:2 1 300px;display:flex;flex-direction:column;justify-content:center;">
+        <div style="display:flex;justify-content:space-between;align-items:center;"><span style="background:#DCE4DA;color:#33493C;font-weight:800;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;border-radius:999px;padding:4px 10px;">Bônus 01</span><span style="display:inline-flex;flex-direction:column;align-items:flex-end;line-height:1.15;"><span style="font-family:'Fraunces',serif;font-weight:600;font-size:22px;color:#B4694E;text-decoration:line-through;text-decoration-thickness:2px;">R$ 39,00</span></span></div>
+        <h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:18px;color:#33493C;margin-top:12px;">SOS Ansiedade — 7 áudios para o impulso</h3>
+        <p style="font-size:13.5px;line-height:1.55;color:#5D6259;margin:8px 0 0;flex:1;">Práticas guiadas de 3–5 min com respiração e ancoragem, para usar quando a vontade parece incontrolável.</p>
+      </div>
+    </div>
+    <div style="background:#FBF8F2;border:1px solid #E2DBCF;border-radius:18px;overflow:hidden;display:flex;flex-wrap:wrap;align-items:stretch;">
+      <img src="assets/lp/cardapio.jpg" alt="Cardápio da Calma" style="flex:1 1 200px;max-width:300px;min-width:180px;width:100%;object-fit:cover;display:block;">
+      <div style="padding:18px 20px 20px;text-align:left;flex:2 1 300px;display:flex;flex-direction:column;justify-content:center;">
+        <div style="display:flex;justify-content:space-between;align-items:center;"><span style="background:#DCE4DA;color:#33493C;font-weight:800;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;border-radius:999px;padding:4px 10px;">Bônus 02</span><span style="display:inline-flex;flex-direction:column;align-items:flex-end;line-height:1.15;"><span style="font-family:'Fraunces',serif;font-weight:600;font-size:22px;color:#B4694E;text-decoration:line-through;text-decoration-thickness:2px;">R$ 59,00</span></span></div>
+        <h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:18px;color:#33493C;margin-top:12px;">Cardápio da Calma</h3>
+        <p style="font-size:13.5px;line-height:1.55;color:#5D6259;margin:8px 0 0;flex:1;">Consulta rápida dos alimentos que acalmam × que agitam. Imprima e cole na geladeira.</p>
+      </div>
+    </div>
+    <div style="background:#FBF8F2;border:1px solid #E2DBCF;border-radius:18px;overflow:hidden;display:flex;flex-wrap:wrap;align-items:stretch;">
+      <img src="assets/lp/corpo.jpg" alt="Corpo Calmo" style="flex:1 1 200px;max-width:300px;min-width:180px;width:100%;object-fit:cover;display:block;">
+      <div style="padding:18px 20px 20px;text-align:left;flex:2 1 300px;display:flex;flex-direction:column;justify-content:center;">
+        <div style="display:flex;justify-content:space-between;align-items:center;"><span style="background:#DCE4DA;color:#33493C;font-weight:800;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;border-radius:999px;padding:4px 10px;">Bônus 03</span><span style="display:inline-flex;flex-direction:column;align-items:flex-end;line-height:1.15;"><span style="font-family:'Fraunces',serif;font-weight:600;font-size:22px;color:#B4694E;text-decoration:line-through;text-decoration-thickness:2px;">R$ 49,00</span></span></div>
+        <h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:18px;color:#33493C;margin-top:12px;">Corpo Calmo — rotina de 5 minutos</h3>
+        <p style="font-size:13.5px;line-height:1.55;color:#5D6259;margin:8px 0 0;flex:1;">Movimentos suaves e respiração para regular o sistema nervoso: manhã, noite e micro-pausas.</p>
+      </div>
+    </div>
+    <div style="background:#FBF8F2;border:1px solid #E2DBCF;border-radius:18px;overflow:hidden;display:flex;flex-wrap:wrap;align-items:stretch;">
+      <img src="assets/lp/diario.jpg" alt="Diário dos Gatilhos" style="flex:1 1 200px;max-width:300px;min-width:180px;width:100%;object-fit:cover;display:block;">
+      <div style="padding:18px 20px 20px;text-align:left;flex:2 1 300px;display:flex;flex-direction:column;justify-content:center;">
+        <div style="display:flex;justify-content:space-between;align-items:center;"><span style="background:#DCE4DA;color:#33493C;font-weight:800;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;border-radius:999px;padding:4px 10px;">Bônus 04</span><span style="display:inline-flex;flex-direction:column;align-items:flex-end;line-height:1.15;"><span style="font-family:'Fraunces',serif;font-weight:600;font-size:22px;color:#B4694E;text-decoration:line-through;text-decoration-thickness:2px;">R$ 34,00</span></span></div>
+        <h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:18px;color:#33493C;margin-top:12px;">Diário dos Gatilhos da Fome Emocional</h3>
+        <p style="font-size:13.5px;line-height:1.55;color:#5D6259;margin:8px 0 0;flex:1;">Registro guiado para enxergar seus padrões e agir antes do impulso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= URGÊNCIA ================= -->
+<section style="background:#26382D;color:#FBF8F2;padding:clamp(64px,9vw,100px) 20px;text-align:center;">
+  <div style="max-width:680px;margin:0 auto;">
+    <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(25px,4.5vw,40px);line-height:1.18;">Quantas segundas-feiras mais você vai prometer recomeçar, enquanto a ansiedade <em style="color:#E0B579;">decide por você</em>?</h2>
+    <p style="font-size:17px;line-height:1.65;color:#D6DCCF;max-width:34rem;margin:22px auto 0;">Você não precisa esperar ter mais força de vontade. Precisa das ferramentas certas para o momento em que a ansiedade aparece.</p>
+    <div style="margin-top:30px;"><a class="lp-cta" href="#oferta" style="display:inline-flex;background:#C0894A;color:#fff;font-weight:800;border-radius:999px;padding:17px 32px;font-size:16px;text-decoration:none;box-shadow:0 12px 26px -10px rgba(165,115,47,.75);">QUERO RECUPERAR O CONTROLE AGORA</a></div>
+    <p style="font-size:13px;color:#B9C2B3;margin-top:14px;">✓ Acesso imediato após a confirmação do pagamento</p>
+  </div>
+</section>
+
+<!-- ================= OFERTA ================= -->
+<section id="oferta" style="background:#EFE9DE;padding:clamp(56px,8vw,88px) 20px;">
+  <div style="max-width:960px;margin:0 auto;">
+    <div style="text-align:center;">
+      <div style="color:#C0894A;font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:11.5px;">Sua oferta de hoje</div>
+      <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(25px,4vw,38px);line-height:1.13;color:#33493C;max-width:34rem;margin:14px auto 0;">Escolha como começar a recuperar o controle</h2>
+      <p style="font-size:16px;color:#5D6259;max-width:34rem;margin:14px auto 0;">Todo o material do Plano Completo somaria <strong style="color:#33493C;">R$ 200,90</strong>. Hoje você não paga nem perto disso.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px;max-width:820px;margin:42px auto 0;align-items:stretch;">
+      <!-- básico -->
+      <div style="background:#FBF8F2;border:1px solid #E2DBCF;border-radius:22px;padding:26px;display:flex;flex-direction:column;box-shadow:0 14px 34px -28px rgba(0,0,0,.35);">
+        <img src="assets/lp/guia.jpg" alt="Plano Básico — Guia" style="width:64%;max-width:210px;margin:0 auto;border-radius:12px;display:block;">
+        <h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:23px;color:#33493C;margin-top:18px;">Plano Básico</h3>
+        <ul style="list-style:none;padding:0;margin:14px 0 0;flex:1;display:flex;flex-direction:column;gap:8px;">
+          <li style="display:flex;gap:9px;font-size:14.5px;color:#2B2E29;"><span style="color:#C0894A;font-weight:800;">✓</span> Guia Anti Compulsão Emocional completo</li>
+          <li style="display:flex;gap:9px;font-size:14.5px;color:#9a9689;"><span>—</span> Sem os 4 bônus</li>
+        </ul>
+        <div style="margin-top:18px;">
+          <div style="font-size:13.5px;color:#5D6259;">De <span style="text-decoration:line-through;">R$ 79,00</span> por apenas</div>
+          <div style="font-family:'Fraunces',serif;font-weight:600;font-size:38px;color:#33493C;line-height:1.1;">R$ 19,90</div>
+          <div style="font-size:12.5px;color:#5D6259;">pagamento único</div>
+        </div>
+        <a class="lp-cta" href="https://pay.kiwify.com.br/C6T3A16" style="display:flex;justify-content:center;margin-top:18px;border:1.5px solid #33493C;color:#33493C;font-weight:800;border-radius:999px;padding:15px 20px;font-size:15px;text-decoration:none;">QUERO COMEÇAR</a>
+      </div>
+      <!-- completo -->
+      <div style="position:relative;background:#33493C;color:#FBF8F2;border-radius:22px;padding:26px;display:flex;flex-direction:column;box-shadow:0 30px 60px -30px rgba(38,56,45,.75);">
+        <span style="position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#C0894A;color:#fff;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;border-radius:999px;padding:5px 16px;white-space:nowrap;">⭐ Mais escolhido</span>
+        <img src="assets/lp/combo.jpg" alt="Plano Completo — Guia + bônus" style="width:100%;border-radius:12px;display:block;margin-top:8px;">
+        <h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:23px;margin-top:18px;">Programa Completo Vença a Ansiedade</h3>
+        <ul style="list-style:none;padding:0;margin:14px 0 0;flex:1;display:flex;flex-direction:column;gap:8px;">
+          <li style="display:flex;gap:9px;font-size:14.5px;color:#E4E9DE;"><span style="color:#E0B579;font-weight:800;">✓</span> Guia Anti Compulsão Emocional</li>
+          <li style="display:flex;gap:9px;font-size:14.5px;color:#E4E9DE;"><span style="color:#E0B579;font-weight:800;">✓</span> Bônus 1 — SOS Ansiedade (7 áudios)</li>
+          <li style="display:flex;gap:9px;font-size:14.5px;color:#E4E9DE;"><span style="color:#E0B579;font-weight:800;">✓</span> Bônus 2 — Cardápio da Calma</li>
+          <li style="display:flex;gap:9px;font-size:14.5px;color:#E4E9DE;"><span style="color:#E0B579;font-weight:800;">✓</span> Bônus 3 — Corpo Calmo (rotina de 5 min)</li>
+          <li style="display:flex;gap:9px;font-size:14.5px;color:#E4E9DE;"><span style="color:#E0B579;font-weight:800;">✓</span> Bônus 4 — Diário dos Gatilhos</li>
+        </ul>
+        <div style="margin-top:18px;">
+          <div style="font-size:13.5px;color:#B9C2B3;">Valor dos materiais: <span style="text-decoration:line-through;">R$ 200,90</span> · hoje por</div>
+          <div style="font-family:'Fraunces',serif;font-weight:600;font-size:38px;color:#E0B579;line-height:1.1;">R$ 27,90</div>
+          <div style="font-size:12.5px;color:#B9C2B3;">pagamento único</div>
+        </div>
+        <a class="lp-cta" href="https://pay.kiwify.com.br/LnOagnP" style="display:flex;justify-content:center;margin-top:18px;background:#C0894A;color:#fff;font-weight:800;border-radius:999px;padding:15px 20px;font-size:15px;text-decoration:none;box-shadow:0 12px 26px -10px rgba(165,115,47,.8);">QUERO O PLANO COMPLETO</a>
+      </div>
+    </div>
+    <div style="max-width:640px;margin:22px auto 0;background:#DCE4DA;border-radius:14px;padding:16px 22px;text-align:center;">
+      <p style="font-size:15px;line-height:1.55;color:#33493C;margin:0;">Por apenas <strong>R$ 8,00 a mais</strong>, você leva todos os bônus criados para os momentos em que a ansiedade aparece. É por isso que a maioria escolhe o Plano Completo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GARANTIA ================= -->
+<section style="background:#F6F2EB;padding:clamp(56px,8vw,88px) 20px;">
+  <div style="max-width:640px;margin:0 auto;">
+    <div style="background:#FBF8F2;border:1.5px solid rgba(192,137,74,.4);border-radius:24px;padding:clamp(28px,5vw,44px);text-align:center;">
+      <div style="width:64px;height:64px;border-radius:50%;background:#DCE4DA;display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 16px;">🛡️</div>
+      <div style="color:#C0894A;font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:11.5px;">Risco zero</div>
+      <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(23px,4vw,32px);color:#33493C;line-height:1.15;margin-top:12px;">Garantia incondicional de 7 dias</h2>
+      <p style="font-size:16px;line-height:1.65;color:#5D6259;margin:16px 0 0;">Acesse todo o conteúdo e avalie com calma. Se perceber que não é para você, devolvemos <strong style="color:#33493C;">100% do valor</strong>, sem complicação — conforme o Código de Defesa do Consumidor.</p>
+      <div style="margin-top:24px;"><a class="lp-cta" href="#oferta" style="display:inline-flex;background:#C0894A;color:#fff;font-weight:800;border-radius:999px;padding:16px 30px;font-size:15px;text-decoration:none;box-shadow:0 12px 26px -10px rgba(165,115,47,.75);">QUERO COMEÇAR COM GARANTIA</a></div>
+      <p style="font-size:12.5px;color:#5D6259;margin-top:14px;">🔒 Compra segura · Garantia de 7 dias · Acesso imediato</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section style="background:#33493C;color:#FBF8F2;padding:clamp(56px,8vw,88px) 20px;">
+  <div style="max-width:900px;margin:0 auto;">
+    <div style="text-align:center;">
+      <div style="color:#E0B579;font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:11.5px;">Simples e rápido</div>
+      <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(25px,4vw,36px);margin-top:14px;">Seu acesso em poucos minutos</h2>
+    </div>
+    <div class="lp-car" id="step-car" style="display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:34px;padding:6px 4px 14px;">
+      <div style="flex:0 0 min(80vw,300px);scroll-snap-align:center;display:flex;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:20px;"><span style="width:38px;height:38px;border-radius:50%;background:#C0894A;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;flex-shrink:0;">1</span><div><strong style="font-size:15.5px;">Finalize com segurança</strong><p style="font-size:13.5px;line-height:1.55;color:#CBD3C6;margin:5px 0 0;">Pix, cartão e outros meios, em ambiente seguro (Kiwify).</p></div></div>
+      <div style="flex:0 0 min(80vw,300px);scroll-snap-align:center;display:flex;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:20px;"><span style="width:38px;height:38px;border-radius:50%;background:#C0894A;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;flex-shrink:0;">2</span><div><strong style="font-size:15.5px;">Receba o acesso na hora</strong><p style="font-size:13.5px;line-height:1.55;color:#CBD3C6;margin:5px 0 0;">Após a confirmação, chega um e-mail com tudo — geralmente em minutos.</p></div></div>
+      <div style="flex:0 0 min(80vw,300px);scroll-snap-align:center;display:flex;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:20px;"><span style="width:38px;height:38px;border-radius:50%;background:#C0894A;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;flex-shrink:0;">3</span><div><strong style="font-size:15.5px;">Abra em qualquer aparelho</strong><p style="font-size:13.5px;line-height:1.55;color:#CBD3C6;margin:5px 0 0;">Celular, computador ou tablet — leia no seu ritmo.</p></div></div>
+      <div style="flex:0 0 min(80vw,300px);scroll-snap-align:center;display:flex;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:20px;"><span style="width:38px;height:38px;border-radius:50%;background:#C0894A;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;flex-shrink:0;">4</span><div><strong style="font-size:15.5px;">Aplique no mesmo dia</strong><p style="font-size:13.5px;line-height:1.55;color:#CBD3C6;margin:5px 0 0;">Já nas primeiras páginas há exercícios para interromper o impulso.</p></div></div>
+    </div>
+    <div style="display:flex;justify-content:center;gap:12px;margin-top:4px;">
+      <button onClick="{{ stepPrev }}" aria-label="Anterior" style="width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(251,248,242,.4);background:transparent;color:#FBF8F2;font-size:18px;cursor:pointer;">←</button>
+      <button onClick="{{ stepNext }}" aria-label="Próximo" style="width:44px;height:44px;border-radius:50%;border:none;background:#C0894A;color:#fff;font-size:18px;cursor:pointer;box-shadow:0 10px 22px -10px rgba(165,115,47,.8);">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AUTORIDADE ================= -->
+<section style="background:#EFE9DE;padding:clamp(56px,8vw,88px) 20px;">
+  <div style="max-width:640px;margin:0 auto;">
+    <img src="assets/lp/people/autora.jpg" alt="Orientação sobre alimentação e emoções" style="width:100%;height:auto;border-radius:18px;display:block;margin-bottom:26px;box-shadow:0 20px 44px -24px rgba(40,50,40,.4);">
+    <div style="color:#C0894A;font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:11.5px;">Quem desenvolveu</div>
+    <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(23px,4vw,32px);color:#33493C;line-height:1.15;margin-top:14px;">Feito por quem entende a relação entre ansiedade, emoções e alimentação</h2>
+    <p style="font-size:16.5px;line-height:1.7;color:#5D6259;margin:20px 0 0;">Durante anos, vi a mesma história se repetir: mulheres inteligentes e determinadas terminando o dia convencidas de que o problema era falta de disciplina. Não era. Por trás do comportamento havia ansiedade acumulada, emoções mal compreendidas e um ciclo de culpa que fazia tudo recomeçar.</p>
+    <p style="font-size:16.5px;line-height:1.7;color:#5D6259;margin:14px 0 0;">O <strong style="color:#33493C;">Guia Anti Compulsão Emocional</strong> nasceu para transformar essa informação complexa em estratégias simples, práticas e acolhedoras — validadas nos Estados Unidos e agora acessíveis no Brasil.</p>
+    <p style="font-size:16.5px;line-height:1.7;color:#2B2E29;font-weight:600;margin:14px 0 0;">Você merece entender suas emoções e cuidar de si com respeito, equilíbrio e gentileza.</p>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section style="background:#F6F2EB;padding:clamp(56px,8vw,88px) 20px;">
+  <div style="max-width:640px;margin:0 auto;">
+    <div style="text-align:center;">
+      <div style="color:#C0894A;font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:11.5px;">Ainda com dúvidas?</div>
+      <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(25px,4vw,36px);color:#33493C;margin-top:14px;">Perguntas frequentes</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;margin-top:30px;">
+      <details class="lp-faq" style="background:#FBF8F2;border:1px solid #E2DBCF;border-radius:16px;padding:0 20px;"><summary style="display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0;font-weight:700;font-size:15.5px;color:#33493C;">O Guia é um livro ou um curso?<span class="lp-plus" style="color:#C0894A;font-size:22px;line-height:1;">+</span></summary><p style="font-size:14.5px;line-height:1.6;color:#5D6259;margin:0;padding:0 0 18px;">É um ebook prático, para consultar sempre que precisar: conteúdo explicativo + exercícios, checklists e ferramentas de aplicação imediata.</p></details>
+      <details class="lp-faq" style="background:#FBF8F2;border:1px solid #E2DBCF;border-radius:16px;padding:0 20px;"><summary style="display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0;font-weight:700;font-size:15.5px;color:#33493C;">Pode me ajudar se eu como por ansiedade?<span class="lp-plus" style="color:#C0894A;font-size:22px;line-height:1;">+</span></summary><p style="font-size:14.5px;line-height:1.6;color:#5D6259;margin:0;padding:0 0 18px;">Sim — foi criado exatamente para quem come por impulso quando está ansiosa, estressada ou sobrecarregada. Você aprende a identificar gatilhos e a agir antes do automático.</p></details>
+      <details class="lp-faq" style="background:#FBF8F2;border:1px solid #E2DBCF;border-radius:16px;padding:0 20px;"><summary style="display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0;font-weight:700;font-size:15.5px;color:#33493C;">Substitui acompanhamento profissional?<span class="lp-plus" style="color:#C0894A;font-size:22px;line-height:1;">+</span></summary><p style="font-size:14.5px;line-height:1.6;color:#5D6259;margin:0;padding:0 0 18px;">Não. É material educativo e não substitui médicos, psicólogos ou nutricionistas. Com sintomas intensos ou persistentes, procure um profissional.</p></details>
+      <details class="lp-faq" style="background:#FBF8F2;border:1px solid #E2DBCF;border-radius:16px;padding:0 20px;"><summary style="display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0;font-weight:700;font-size:15.5px;color:#33493C;">Em quanto tempo recebo o acesso?<span class="lp-plus" style="color:#C0894A;font-size:22px;line-height:1;">+</span></summary><p style="font-size:14.5px;line-height:1.6;color:#5D6259;margin:0;padding:0 0 18px;">Liberação automática após a confirmação do pagamento — na maioria dos casos, em poucos minutos, com instruções por e-mail.</p></details>
+      <details class="lp-faq" style="background:#FBF8F2;border:1px solid #E2DBCF;border-radius:16px;padding:0 20px;"><summary style="display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0;font-weight:700;font-size:15.5px;color:#33493C;">Posso acessar pelo celular?<span class="lp-plus" style="color:#C0894A;font-size:22px;line-height:1;">+</span></summary><p style="font-size:14.5px;line-height:1.6;color:#5D6259;margin:0;padding:0 0 18px;">Sim — celular, computador ou tablet, onde e quando preferir.</p></details>
+      <details class="lp-faq" style="background:#FBF8F2;border:1px solid #E2DBCF;border-radius:16px;padding:0 20px;"><summary style="display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0;font-weight:700;font-size:15.5px;color:#33493C;">O que está incluído no Plano Completo?<span class="lp-plus" style="color:#C0894A;font-size:22px;line-height:1;">+</span></summary><p style="font-size:14.5px;line-height:1.6;color:#5D6259;margin:0;padding:0 0 18px;">Além do Guia: SOS Ansiedade (7 áudios), Cardápio da Calma, Corpo Calmo e Diário dos Gatilhos — o melhor custo-benefício.</p></details>
+      <details class="lp-faq" style="background:#FBF8F2;border:1px solid #E2DBCF;border-radius:16px;padding:0 20px;"><summary style="display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0;font-weight:700;font-size:15.5px;color:#33493C;">E se eu perceber que não é para mim?<span class="lp-plus" style="color:#C0894A;font-size:22px;line-height:1;">+</span></summary><p style="font-size:14.5px;line-height:1.6;color:#5D6259;margin:0;padding:0 0 18px;">Você está protegida pela garantia de 7 dias: reembolso de 100% do valor, sem burocracia.</p></details>
+      <details class="lp-faq" style="background:#FBF8F2;border:1px solid #E2DBCF;border-radius:16px;padding:0 20px;"><summary style="display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0;font-weight:700;font-size:15.5px;color:#33493C;">Esse guia promete emagrecimento?<span class="lp-plus" style="color:#C0894A;font-size:22px;line-height:1;">+</span></summary><p style="font-size:14.5px;line-height:1.6;color:#5D6259;margin:0;padding:0 0 18px;">Não. O foco é a relação entre ansiedade, fome emocional e comportamento alimentar. Mudanças de hábito podem favorecer o emagrecimento, mas ele não é prometido como resultado.</p></details>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <p style="font-size:16.5px;line-height:1.65;color:#5D6259;max-width:34rem;margin:0 auto 22px;">Talvez você tenha chegado até aqui cansada de recomeçar e de sentir culpa. Agora você sabe que existe um caminho diferente.</p>
+      <a class="lp-cta" href="#oferta" style="display:inline-flex;background:#C0894A;color:#fff;font-weight:800;border-radius:999px;padding:17px 32px;font-size:16px;text-decoration:none;box-shadow:0 12px 26px -10px rgba(165,115,47,.75);">SIM! QUERO RECUPERAR O CONTROLE</a>
+      <p style="font-size:12.5px;color:#5D6259;margin-top:14px;">🔒 Compra 100% segura · Garantia de 7 dias · Acesso imediato</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RODAPÉ ================= -->
+<footer style="background:#26382D;color:#CBD3C6;padding:56px 20px 90px;text-align:center;">
+  <div style="max-width:680px;margin:0 auto;">
+    <div style="font-family:'Fraunces',serif;font-weight:600;font-size:24px;color:#FBF8F2;letter-spacing:.06em;">Korvyn</div>
+    <p style="font-size:15px;line-height:1.6;max-width:38rem;margin:16px auto 0;">O <strong style="color:#FBF8F2;">Guia Anti Compulsão Emocional</strong> ajuda mulheres a compreender a relação entre ansiedade, fome emocional e comportamento alimentar.</p>
+    <p style="font-size:14px;margin:18px 0 0;">Suporte: <a href="mailto:contact@korvyn.co" style="color:#E0B579;font-weight:700;">contact@korvyn.co</a></p>
+    <div style="height:1px;background:rgba(255,255,255,.12);max-width:420px;margin:26px auto;"></div>
+    <p style="font-size:12px;line-height:1.6;color:#A6B0A2;margin:0;"><strong style="color:#CBD3C6;">Aviso legal:</strong> material com finalidade exclusivamente educativa e informativa. Não substitui consultas, diagnósticos ou tratamentos de médicos, psicólogos, nutricionistas ou outros profissionais da saúde.</p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;font-size:12.5px;color:#A6B0A2;margin-top:16px;">
+      <span>🔒 Pagamento seguro</span><span>✅ Acesso imediato</span><span>🛡️ Garantia de 7 dias</span>
+    </div>
+    <p style="font-size:11.5px;color:#8A9586;margin-top:26px;">© 2026 Korvyn — Todos os direitos reservados. Reprodução não autorizada constitui violação dos direitos autorais (Lei nº 9.610/98).</p>
+  </div>
+</footer>
+
+<!-- CTA flutuante mobile -->
+<div class="lp-float" style="position:fixed;bottom:0;left:0;right:0;z-index:60;padding:12px 16px 16px;background:linear-gradient(to top, rgba(38,56,45,.97), rgba(38,56,45,.8) 70%, transparent);transform:{{ floatTransform }};transition:transform .35s ease;">
+  <a class="lp-cta" href="#oferta" style="display:flex;justify-content:center;background:#C0894A;color:#fff;font-weight:800;border-radius:999px;padding:15px 20px;font-size:15px;text-decoration:none;box-shadow:0 10px 24px -10px rgba(165,115,47,.8);">QUERO O PLANO COMPLETO →</a>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { showFloat: false };
+  carRef = React.createRef();
+  componentDidMount() {
+    this._onScroll = () => {
+      const show = window.scrollY > 700;
+      if (show !== this.state.showFloat) this.setState({ showFloat: show });
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    this._onScroll();
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this._onScroll); }
+  scrollCar(dir, id = 'depo-car') {
+    const el = document.getElementById(id);
+    if (el) el.scrollBy({ left: dir * (Math.min(window.innerWidth * 0.8, 356) + 16), behavior: 'smooth' });
+  }
+  renderVals() {
+    const raw = [
+      ["Juliana M., 34","São Paulo (SP)","Achei que fosse comprar só mais um ebook… mas foi a primeira vez que alguém explicou por que eu perdia totalmente o controle quando ficava ansiosa. Hoje consigo parar, respirar e pensar antes de atacar a geladeira."],
+      ["Fernanda R., 42","Belo Horizonte (MG)","Eu vivia no ciclo de comer, sentir culpa e prometer que segunda seria diferente. Depois de entender meus gatilhos, percebi que o problema nunca foi falta de disciplina. Só isso já tirou um peso enorme."],
+      ["Camila S., 29","Curitiba (PR)","Os áudios do bônus viraram minha salvação. Quando bate aquela ansiedade à noite, coloco um deles e consigo diminuir muito a vontade de descontar tudo na comida."],
+      ["Patrícia A., 47","Recife (PE)","O que mais gostei foi que não fala em dieta maluca. É um material muito humano. Você entende o que está acontecendo e aprende pequenas atitudes que realmente consegue colocar em prática."],
+      ["Daniela C., 38","Porto Alegre (RS)","Sempre achei que eu era fraca. Depois de ler o guia, entendi que minha ansiedade comandava minhas escolhas. Hoje reconheço os sinais antes que o impulso fique enorme."],
+      ["Renata L., 36","Goiânia (GO)","O Diário dos Gatilhos foi o que mais me surpreendeu. Nunca tinha percebido que eu comia quase sempre quando estava cansada ou preocupada. Hoje identifico isso antes de abrir qualquer pacote."],
+      ["Aline P., 31","Salvador (BA)","É um daqueles materiais que você consulta várias vezes. Não ficou esquecido na pasta de downloads. Sempre volto quando sinto que a ansiedade está aumentando."],
+      ["Simone T., 51","Campinas (SP)","Pela primeira vez consegui olhar para mim sem aquela culpa constante. Ainda estou aprendendo, mas hoje sinto que tenho ferramentas para lidar com a ansiedade sem descontar na comida."],
+      ["Vanessa G., 33","Fortaleza (CE)","A Respiração SOS parece simples demais pra funcionar — até você usar no momento certo. Foi a primeira ferramenta que consegui aplicar de verdade num dia difícil."],
+      ["Luciana F., 44","Brasília (DF)","Eu segurava o dia inteiro e desmoronava às 21h. O capítulo sobre a noite me descreveu com uma precisão que assustou. Entender o porquê mudou completamente a forma como me trato."],
+      ["Tatiane M., 27","Manaus (AM)","Comprei desconfiada pelo preço. O conteúdo vale muito mais. Direto, acolhedor e sem enrolação."],
+      ["Cristiane B., 39","Florianópolis (SC)","O Cardápio da Calma tá colado na minha geladeira. Meu marido até começou a seguir junto comigo."],
+      ["Adriana S., 48","Niterói (RJ)","Depois de décadas de dieta, foi a primeira vez que alguém me disse que o problema não era o prato — era o que vinha antes dele. Choro até hoje quando releio a primeira etapa."],
+      ["Michele R., 30","Londrina (PR)","A técnica da onda mudou tudo. Saber que a vontade passa sozinha em poucos minutos tirou o desespero. Agora eu espero — e na maioria das vezes ela passa mesmo."],
+      ["Roberta N., 41","Vitória (ES)","Material lindo, organizado, fácil de ler no celular. Uso as micro-pausas do Corpo Calmo no trabalho quando sinto a ansiedade subindo."],
+      ["Elaine V., 52","Santos (SP)","Achei que na minha idade não mudaria mais. Em três semanas usando o diário, encontrei um padrão que carregava há 30 anos sem ver."],
+      ["Priscila D., 35","João Pessoa (PB)","Não promete milagre, e é isso que dá confiança. Ensina a cuidar da emoção primeiro — e aí o resto começa a se ajeitar."],
+      ["Karina L., 28","Uberlândia (MG)","A parte sobre dietas restritivas me libertou. Eu vivia entre 8 ou 80. Aprender o caminho do meio foi o que finalmente me deu constância."],
+      ["Sandra O., 46","Ribeirão Preto (SP)","Comecei pelo Plano Básico e voltei pra comprar o Completo. Os áudios sozinhos já valem o valor todo."],
+      ["Bianca T., 32","Natal (RN)","Li tudo em dois dias e voltei várias vezes depois. É tipo um manual de emergência que eu abro quando o dia aperta."],
+      ["Débora H., 37","Cuiabá (MT)","O teste da fruta é genial. Simples assim: se eu não comeria uma fruta, não é fome. Uso todos os dias."],
+      ["Marcela P., 43","Belém (PA)","Sofria com o domingo à noite. As rotinas de noite do Corpo Calmo viraram meu ritual — durmo melhor e segunda ficou mais leve."],
+      ["Regina C., 55","Juiz de Fora (MG)","Linguagem carinhosa, sem julgamento. Me senti compreendida da primeira à última página."],
+      ["Amanda J., 26","Maceió (AL)","Eu comia escondido e me odiava depois. A etapa sobre a culpa me fez entender que ela era o combustível do ciclo. Estou há um mês sem episódios grandes."],
+      ["Sônia M., 49","Sorocaba (SP)","Comprei pra mim e acabei indicando pras minhas duas irmãs. As três fazendo o diário juntas. Melhor investimento de bem-estar que já fiz."]
+    ];
+    const fotos = ['av-01','av-02','av-03','av-04','av-05','av-06','av-07','av-08','av-09','av-10','av-11'];
+    return {
+      depoimentos: raw.map(([nome, cidade, texto], i) => {
+        const foto = i < fotos.length ? 'assets/lp/people/' + fotos[i] + '.jpg' : null;
+        return { nome, cidade, texto, inicial: nome.charAt(0), foto, temFoto: !!foto, semFoto: !foto };
+      }),
+      prevDepo: () => this.scrollCar(-1),
+      nextDepo: () => this.scrollCar(1),
+      benPrev: () => this.scrollCar(-1, 'ben-car'),
+      benNext: () => this.scrollCar(1, 'ben-car'),
+      stepPrev: () => this.scrollCar(-1, 'step-car'),
+      stepNext: () => this.scrollCar(1, 'step-car'),
+      floatTransform: this.state.showFloat ? 'translateY(0)' : 'translateY(120%)',
+    };
+  }
+}
+</script>
+</body>
+</html>

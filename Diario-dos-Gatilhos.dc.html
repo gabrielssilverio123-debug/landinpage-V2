@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="omelette-owns-print" content="1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  a{color:#33493C}a:hover{color:#C0894A}
+  .dg-book :where(h1,h2,h3){text-wrap:balance}
+  .dg-book p{text-wrap:pretty}
+  .dg-lines{background-image:repeating-linear-gradient(transparent 0 30px,#cdd6c8 30px 31px);}
+  @media print{
+    @page{size:A4;margin:13mm}
+    .dg-desk{background:#fff!important;padding:0!important}
+    .dg-book{box-shadow:none!important;border-radius:0!important;max-width:none!important;margin:0!important}
+    .dg-chapter{break-before:page}
+    .dg-avoid{break-inside:avoid}
+    .dg-hero{height:auto!important;min-height:0!important;break-after:page}
+    img{break-inside:avoid}
+  }
+</style>
+</helmet>
+<div class="dg-desk" style="background:#E7DDCB;font-family:'Nunito Sans',sans-serif;padding:clamp(0px,3vw,40px);min-height:100vh;">
+<div class="dg-book" style="max-width:880px;margin:0 auto;background:#F6F2EB;color:#33493C;border-radius:14px;overflow:hidden;box-shadow:0 24px 60px rgba(51,73,60,.18);">
+
+  <!-- COVER -->
+  <div class="dg-hero" style="position:relative;height:clamp(430px,74vh,620px);display:flex;flex-direction:column;justify-content:flex-end;">
+    <img src="assets/stress.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%;">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(35,52,42,.20) 0%,rgba(35,52,42,.40) 44%,rgba(30,45,36,.90) 100%);"></div>
+    <div style="position:relative;padding:clamp(26px,5vw,52px);">
+      <div style="display:flex;align-items:center;gap:10px;color:#F6F2EB;">
+        <span style="font-family:'Fraunces',serif;font-weight:600;letter-spacing:.2em;font-size:clamp(13px,1.6vw,16px);">KORVYN</span>
+        <span style="width:5px;height:5px;border-radius:50%;background:#E0B579;"></span>
+        <span style="font-size:clamp(9px,1.3vw,11px);letter-spacing:.24em;text-transform:uppercase;opacity:.85;">Bônus · Diário Guiado</span>
+      </div>
+      <h1 style="font-family:'Fraunces',serif;font-weight:600;color:#F9F5EE;font-size:clamp(34px,6.4vw,64px);line-height:1;letter-spacing:-.015em;margin:clamp(14px,2vw,20px) 0 0;">Diário dos Gatilhos<br>da Fome Emocional</h1>
+      <p style="color:#EDE6D8;font-size:clamp(15px,2.2vw,21px);line-height:1.5;max-width:36ch;margin:clamp(12px,1.6vw,18px) 0 0;">Um espaço para <em style="font-style:italic;color:#E9C58E;">enxergar seus padrões</em> — reconhecer a emoção por trás do impulso e descobrir o que realmente dispara a vontade de comer.</p>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <div style="padding:clamp(28px,5.2vw,64px) clamp(24px,5.2vw,72px) 0;">
+    <div style="max-width:64ch;">
+      <div style="font-size:clamp(10px,1.4vw,11px);letter-spacing:.28em;font-weight:800;color:#C0894A;text-transform:uppercase;">Por que registrar</div>
+      <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(25px,4.2vw,38px);line-height:1.08;margin:14px 0 0;">O que a gente enxerga, a gente consegue mudar</h2>
+      <p style="font-size:clamp(15px,1.9vw,17.5px);line-height:1.68;margin:18px 0 0;color:#3f4f42;">A fome emocional acontece rápido, no automático — e por isso parece "do nada". Não é. Quase sempre existe um gatilho, uma emoção e um horário que se repetem. Quando você registra logo depois de um episódio, tira o padrão da escuridão e passa a enxergá-lo com clareza.</p>
+      <p style="font-size:clamp(15px,1.9vw,17.5px);line-height:1.68;margin:14px 0 0;color:#3f4f42;">Este diário não é para você se vigiar nem se cobrar. É o oposto: um exercício de <strong style="color:#33493C;">autoconhecimento gentil</strong>. Não existe resposta certa ou errada — existe só o que é verdade para você hoje.</p>
+    </div>
+  </div>
+
+  <!-- HOW TO -->
+  <div class="dg-avoid" style="padding:clamp(26px,4vw,44px) clamp(24px,5.2vw,72px) 0;">
+    <div style="display:flex;flex-wrap:wrap;gap:14px;">
+      <div style="flex:1 1 220px;background:#EAEFE6;border:1px solid #dbe3d6;border-radius:16px;padding:20px 22px;">
+        <div style="font-family:'Fraunces',serif;font-size:26px;color:#C0894A;line-height:1;">01</div>
+        <div style="font-family:'Fraunces',serif;font-weight:600;font-size:17px;margin:8px 0 5px;">Registre perto do momento</div>
+        <div style="font-size:13.5px;line-height:1.55;color:#4a5a4c;">Preencha logo após o episódio, enquanto a memória está fresca. Leva 2 minutos.</div>
+      </div>
+      <div style="flex:1 1 220px;background:#EAEFE6;border:1px solid #dbe3d6;border-radius:16px;padding:20px 22px;">
+        <div style="font-family:'Fraunces',serif;font-size:26px;color:#C0894A;line-height:1;">02</div>
+        <div style="font-family:'Fraunces',serif;font-weight:600;font-size:17px;margin:8px 0 5px;">Sem julgamento</div>
+        <div style="font-size:13.5px;line-height:1.55;color:#4a5a4c;">Escreva com honestidade e carinho. Isto é um mapa, não um tribunal.</div>
+      </div>
+      <div style="flex:1 1 220px;background:#EAEFE6;border:1px solid #dbe3d6;border-radius:16px;padding:20px 22px;">
+        <div style="font-family:'Fraunces',serif;font-size:26px;color:#C0894A;line-height:1;">03</div>
+        <div style="font-family:'Fraunces',serif;font-weight:600;font-size:17px;margin:8px 0 5px;">Revise a cada semana</div>
+        <div style="font-size:13.5px;line-height:1.55;color:#4a5a4c;">No fim da semana, use a página de revisão para achar o padrão que se repete.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EMOTION MAP -->
+  <div class="dg-avoid" style="padding:clamp(26px,4vw,44px) clamp(24px,5.2vw,72px) 0;">
+    <div style="background:#33493C;color:#EFE9DD;border-radius:18px;padding:clamp(24px,3.6vw,40px);">
+      <div style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#E0B579;font-weight:700;">Mapa das emoções</div>
+      <h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(22px,3.4vw,30px);margin:10px 0 0;color:#F9F5EE;">Dê nome ao que você sente</h3>
+      <p style="font-size:clamp(14px,1.7vw,16px);line-height:1.6;margin:12px 0 22px;max-width:64ch;color:#d7ded1;">Muitas vezes comemos porque não sabemos nomear o que estamos sentindo. Use estas palavras como ponto de partida — nomear já reduz a intensidade da emoção.</p>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start;">
+          <div style="flex:0 0 130px;color:#E0B579;font-weight:800;font-size:13px;padding-top:4px;">Ansiedade</div>
+          <div style="flex:1 1 240px;display:flex;flex-wrap:wrap;gap:7px;"><span style="background:rgba(255,255,255,.08);border:1px solid rgba(224,181,121,.28);border-radius:999px;padding:4px 12px;font-size:12.5px;">preocupação</span><span style="background:rgba(255,255,255,.08);border:1px solid rgba(224,181,121,.28);border-radius:999px;padding:4px 12px;font-size:12.5px;">tensão</span><span style="background:rgba(255,255,255,.08);border:1px solid rgba(224,181,121,.28);border-radius:999px;padding:4px 12px;font-size:12.5px;">medo</span><span style="background:rgba(255,255,255,.08);border:1px solid rgba(224,181,121,.28);border-radius:999px;padding:4px 12px;font-size:12.5px;">urgência</span></div>
+        </div>
+        <div style="height:1px;background:rgba(255,255,255,.1);"></div>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start;">
+          <div style="flex:0 0 130px;color:#E0B579;font-weight:800;font-size:13px;padding-top:4px;">Tristeza</div>
+          <div style="flex:1 1 240px;display:flex;flex-wrap:wrap;gap:7px;"><span style="background:rgba(255,255,255,.08);border:1px solid rgba(224,181,121,.28);border-radius:999px;padding:4px 12px;font-size:12.5px;">solidão</span><span style="background:rgba(255,255,255,.08);border:1px solid rgba(224,181,121,.28);border-radius:999px;padding:4px 12px;font-size:12.5px;">vazio</span><span style="background:rgba(255,255,255,.08);border:1px solid rgba(224,181,121,.28);border-radius:999px;padding:4px 12px;font-size:12.5px;">desânimo</span><span style="background:rgba(255,255,255,.08);border:1px solid rgba(224,181,121,.28);border-radius:999px;padding:4px 12px;font-size:12.5px;">carência</span></div>
+        </div>
+        <div style="height:1px;background:rgba(255,255,255,.1);"></div>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start;">
+          <div style="flex:0 0 130px;color:#E0B579;font-weight:800;font-size:13px;padding-top:4px;">Cansaço</div>
+          <div style="flex:1 1 240px;display:flex;flex-wrap:wrap;gap:7px;"><span style="background:rgba(255,255,255,.08);border:1px solid rgba(224,181,121,.28);border-radius:999px;padding:4px 12px;font-size:12.5px;">exaustão</span><span style="background:rgba(255,255,255,.08);border:1px solid rgba(224,181,121,.28);border-radius:999px;padding:4px 12px;font-size:12.5px;">sobrecarga</span><span style="background:rgba(255,255,255,.08);border:1px solid rgba(224,181,121,.28);border-radius:999px;padding:4px 12px;font-size:12.5px;">esgotamento</span></div>
+        </div>
+        <div style="height:1px;background:rgba(255,255,255,.1);"></div>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start;">
+          <div style="flex:0 0 130px;color:#E0B579;font-weight:800;font-size:13px;padding-top:4px;">Tédio / Raiva</div>
+          <div style="flex:1 1 240px;display:flex;flex-wrap:wrap;gap:7px;"><span style="background:rgba(255,255,255,.08);border:1px solid rgba(224,181,121,.28);border-radius:999px;padding:4px 12px;font-size:12.5px;">inquietação</span><span style="background:rgba(255,255,255,.08);border:1px solid rgba(224,181,121,.28);border-radius:999px;padding:4px 12px;font-size:12.5px;">frustração</span><span style="background:rgba(255,255,255,.08);border:1px solid rgba(224,181,121,.28);border-radius:999px;padding:4px 12px;font-size:12.5px;">irritação</span><span style="background:rgba(255,255,255,.08);border:1px solid rgba(224,181,121,.28);border-radius:999px;padding:4px 12px;font-size:12.5px;">culpa</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK CHECK physical vs emotional -->
+  <div class="dg-avoid" style="padding:clamp(26px,4vw,44px) clamp(24px,5.2vw,72px) 0;">
+    <h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(19px,2.7vw,24px);margin:0 0 4px;">Antes de registrar: era fome física ou emocional?</h3>
+    <p style="font-size:13.5px;color:#6b7a6b;margin:0 0 18px;">Um lembrete rápido para preencher o diário com mais clareza.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:14px;">
+      <div style="flex:1 1 260px;background:#EAEFE6;border:1px solid #dbe3d6;border-radius:14px;padding:18px 20px;">
+        <div style="font-family:'Fraunces',serif;font-weight:600;font-size:16px;color:#33493C;margin-bottom:8px;">🌱 Fome física</div>
+        <div style="font-size:13px;line-height:1.6;color:#4a5a4c;">Chega devagar · dá sinais no corpo · aceita qualquer alimento · passa quando sacia · não deixa culpa.</div>
+      </div>
+      <div style="flex:1 1 260px;background:#F3E7DC;border:1px solid #ecd8c8;border-radius:14px;padding:18px 20px;">
+        <div style="font-family:'Fraunces',serif;font-weight:600;font-size:16px;color:#8a4a34;margin-bottom:8px;">⚡ Fome emocional</div>
+        <div style="font-size:13px;line-height:1.6;color:#7a5a48;">Chega de repente · pede algo específico · "preciso agora" mesmo sem fome · costuma deixar culpa depois.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAILY ENTRIES (repeated) -->
+  <sc-for list="{{ dias }}" as="dia" hint-placeholder-count="4">
+  <div class="dg-chapter" style="padding:clamp(30px,5vw,54px) clamp(24px,5.2vw,72px) 0;">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;border-bottom:2px solid #33493C;padding-bottom:12px;">
+      <div style="display:flex;align-items:baseline;gap:12px;">
+        <span style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(26px,4vw,34px);color:#C0894A;">{{ dia.n }}</span>
+        <span style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(20px,3vw,26px);">Registro do dia</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#6b7a6b;">Data <span style="display:inline-block;width:130px;border-bottom:1.5px solid #b9c1b0;height:18px;"></span></div>
+    </div>
+
+    <div style="margin-top:22px;">
+      <div style="font-weight:800;font-size:13.5px;color:#33493C;margin-bottom:10px;">1 · O que aconteceu antes? <span style="font-weight:400;color:#8a9384;">(a situação, o gatilho)</span></div>
+      <div class="dg-lines" style="height:62px;border-radius:6px;"></div>
+    </div>
+
+    <div style="margin-top:20px;">
+      <div style="font-weight:800;font-size:13.5px;color:#33493C;margin-bottom:10px;">2 · Que emoção eu sentia? <span style="font-weight:400;color:#8a9384;">(marque quantas quiser)</span></div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <span style="display:inline-flex;align-items:center;gap:6px;border:1px solid #cdd6c8;border-radius:999px;padding:5px 12px;font-size:12.5px;background:#fff;"><span style="width:13px;height:13px;border:1.5px solid #9aa891;border-radius:3px;display:inline-block;"></span>Ansiedade</span>
+        <span style="display:inline-flex;align-items:center;gap:6px;border:1px solid #cdd6c8;border-radius:999px;padding:5px 12px;font-size:12.5px;background:#fff;"><span style="width:13px;height:13px;border:1.5px solid #9aa891;border-radius:3px;display:inline-block;"></span>Estresse</span>
+        <span style="display:inline-flex;align-items:center;gap:6px;border:1px solid #cdd6c8;border-radius:999px;padding:5px 12px;font-size:12.5px;background:#fff;"><span style="width:13px;height:13px;border:1.5px solid #9aa891;border-radius:3px;display:inline-block;"></span>Tristeza</span>
+        <span style="display:inline-flex;align-items:center;gap:6px;border:1px solid #cdd6c8;border-radius:999px;padding:5px 12px;font-size:12.5px;background:#fff;"><span style="width:13px;height:13px;border:1.5px solid #9aa891;border-radius:3px;display:inline-block;"></span>Solidão</span>
+        <span style="display:inline-flex;align-items:center;gap:6px;border:1px solid #cdd6c8;border-radius:999px;padding:5px 12px;font-size:12.5px;background:#fff;"><span style="width:13px;height:13px;border:1.5px solid #9aa891;border-radius:3px;display:inline-block;"></span>Cansaço</span>
+        <span style="display:inline-flex;align-items:center;gap:6px;border:1px solid #cdd6c8;border-radius:999px;padding:5px 12px;font-size:12.5px;background:#fff;"><span style="width:13px;height:13px;border:1.5px solid #9aa891;border-radius:3px;display:inline-block;"></span>Tédio</span>
+        <span style="display:inline-flex;align-items:center;gap:6px;border:1px solid #cdd6c8;border-radius:999px;padding:5px 12px;font-size:12.5px;background:#fff;"><span style="width:13px;height:13px;border:1.5px solid #9aa891;border-radius:3px;display:inline-block;"></span>Raiva</span>
+        <span style="display:inline-flex;align-items:center;gap:6px;border:1px solid #cdd6c8;border-radius:999px;padding:5px 12px;font-size:12.5px;background:#fff;"><span style="width:13px;height:13px;border:1.5px solid #9aa891;border-radius:3px;display:inline-block;"></span>Culpa</span>
+        <span style="display:inline-flex;align-items:center;gap:6px;border:1px solid #cdd6c8;border-radius:999px;padding:5px 12px;font-size:12.5px;background:#fff;"><span style="width:13px;height:13px;border:1.5px solid #9aa891;border-radius:3px;display:inline-block;"></span>Outra: __________</span>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:22px;margin-top:20px;">
+      <div style="flex:1 1 240px;">
+        <div style="font-weight:800;font-size:13.5px;color:#33493C;margin-bottom:10px;">3 · Era fome física ou emocional?</div>
+        <div style="display:flex;gap:10px;">
+          <span style="flex:1;display:inline-flex;align-items:center;gap:8px;border:1px solid #cdd6c8;border-radius:10px;padding:10px 12px;font-size:13px;background:#fff;"><span style="width:14px;height:14px;border:1.5px solid #9aa891;border-radius:4px;display:inline-block;"></span>Física</span>
+          <span style="flex:1;display:inline-flex;align-items:center;gap:8px;border:1px solid #ecd8c8;border-radius:10px;padding:10px 12px;font-size:13px;background:#fff;"><span style="width:14px;height:14px;border:1.5px solid #d3ac8f;border-radius:4px;display:inline-block;"></span>Emocional</span>
+        </div>
+      </div>
+      <div style="flex:1 1 240px;">
+        <div style="font-weight:800;font-size:13.5px;color:#33493C;margin-bottom:10px;">4 · Nível do impulso <span style="font-weight:400;color:#8a9384;">(1 a 10)</span></div>
+        <div style="display:flex;gap:5px;flex-wrap:wrap;">
+          <span style="width:26px;height:26px;border:1.5px solid #9aa891;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#6b7a6b;">1</span>
+          <span style="width:26px;height:26px;border:1.5px solid #9aa891;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#6b7a6b;">2</span>
+          <span style="width:26px;height:26px;border:1.5px solid #9aa891;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#6b7a6b;">3</span>
+          <span style="width:26px;height:26px;border:1.5px solid #9aa891;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#6b7a6b;">4</span>
+          <span style="width:26px;height:26px;border:1.5px solid #9aa891;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#6b7a6b;">5</span>
+          <span style="width:26px;height:26px;border:1.5px solid #9aa891;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#6b7a6b;">6</span>
+          <span style="width:26px;height:26px;border:1.5px solid #9aa891;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#6b7a6b;">7</span>
+          <span style="width:26px;height:26px;border:1.5px solid #9aa891;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#6b7a6b;">8</span>
+          <span style="width:26px;height:26px;border:1.5px solid #9aa891;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#6b7a6b;">9</span>
+          <span style="width:26px;height:26px;border:1.5px solid #C0894A;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#C0894A;">10</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:20px;">
+      <div style="font-weight:800;font-size:13.5px;color:#33493C;margin-bottom:10px;">5 · O que eu fiz? <span style="font-weight:400;color:#8a9384;">(comi, respirei, saí, liguei para alguém…)</span></div>
+      <div class="dg-lines" style="height:62px;border-radius:6px;"></div>
+    </div>
+
+    <div style="margin-top:20px;">
+      <div style="font-weight:800;font-size:13.5px;color:#33493C;margin-bottom:10px;">6 · Como me senti depois?</div>
+      <div class="dg-lines" style="height:62px;border-radius:6px;"></div>
+    </div>
+
+    <div style="margin-top:20px;border-left:4px solid #C0894A;border-radius:0 12px 12px 0;padding:16px 18px;background:#F6EEDF;">
+      <div style="font-weight:800;font-size:13.5px;color:#8a5a2c;margin-bottom:10px;">7 · O que posso tentar da próxima vez? <span style="font-weight:400;color:#b08a5c;">(uma alternativa gentil)</span></div>
+      <div class="dg-lines" style="height:62px;border-radius:6px;background-image:repeating-linear-gradient(transparent 0 30px,#e2cbab 30px 31px);"></div>
+    </div>
+  </div>
+  </sc-for>
+
+  <!-- WEEKLY REVIEW -->
+  <div class="dg-chapter" style="padding:clamp(30px,5vw,54px) clamp(24px,5.2vw,72px) 0;">
+    <div style="font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:#C0894A;font-weight:800;">Revisão da semana</div>
+    <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(24px,4vw,36px);margin:8px 0 0;line-height:1.05;">O padrão começa a aparecer</h2>
+    <p style="font-size:clamp(14px,1.7vw,16.5px);line-height:1.62;margin:16px 0 24px;color:#3f4f42;max-width:66ch;">Releia seus registros da semana com calma e curiosidade. Você não está procurando culpa — está procurando o padrão que, uma vez visível, você pode começar a mudar.</p>
+    <div style="display:flex;flex-direction:column;gap:18px;">
+      <div class="dg-avoid" style="background:#EAEFE6;border:1px solid #dbe3d6;border-radius:14px;padding:18px 20px;">
+        <div style="font-weight:800;font-size:14px;margin-bottom:12px;">Qual emoção mais apareceu nos meus registros?</div>
+        <div class="dg-lines" style="height:32px;border-radius:6px;"></div>
+      </div>
+      <div class="dg-avoid" style="background:#EAEFE6;border:1px solid #dbe3d6;border-radius:14px;padding:18px 20px;">
+        <div style="font-weight:800;font-size:14px;margin-bottom:12px;">Qual horário ou situação se repetiu?</div>
+        <div class="dg-lines" style="height:32px;border-radius:6px;"></div>
+      </div>
+      <div class="dg-avoid" style="background:#EAEFE6;border:1px solid #dbe3d6;border-radius:14px;padding:18px 20px;">
+        <div style="font-weight:800;font-size:14px;margin-bottom:12px;">O que funcionou pra mim quando não comi por impulso?</div>
+        <div class="dg-lines" style="height:32px;border-radius:6px;"></div>
+      </div>
+      <div class="dg-avoid" style="background:#33493C;color:#EFE9DD;border-radius:14px;padding:18px 20px;">
+        <div style="font-weight:800;font-size:14px;margin-bottom:12px;color:#E0B579;">Uma gentileza que quero ter comigo na próxima semana</div>
+        <div class="dg-lines" style="height:32px;border-radius:6px;background-image:repeating-linear-gradient(transparent 0 30px,rgba(224,181,121,.35) 30px 31px);"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <div class="dg-avoid" style="margin-top:clamp(34px,5vw,64px);">
+    <div style="position:relative;height:clamp(300px,42vh,420px);">
+      <img src="assets/mirror.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 22%;">
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(35,52,42,.30),rgba(35,52,42,.84));"></div>
+      <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:clamp(24px,5vw,48px);">
+        <div style="font-family:'Fraunces',serif;font-size:26px;color:#E0B579;line-height:1;">&#10086;</div>
+        <p style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;color:#F9F5EE;font-size:clamp(20px,3vw,30px);line-height:1.35;max-width:26ch;margin:14px 0 0;">Toda vez que você percebe o padrão em vez de só vivê-lo, você já está mudando.</p>
+        <div style="width:46px;height:2px;background:#E0B579;margin:22px auto 0;border-radius:2px;"></div>
+        <div style="font-family:'Fraunces',serif;font-weight:600;letter-spacing:.2em;color:#EDE6D8;font-size:14px;margin-top:20px;">KORVYN</div>
+      </div>
+    </div>
+    <div style="padding:clamp(20px,3vw,30px) clamp(24px,5.2vw,72px);">
+      <p style="font-size:11px;line-height:1.5;color:#8a9384;margin:0;max-width:80ch;">Material educativo de bem-estar emocional. Não substitui acompanhamento de psicólogos, psiquiatras, médicos ou nutricionistas. Se o comer emocional é frequente e causa muito sofrimento, procure apoio profissional. No Brasil, o CVV oferece apoio emocional gratuito e sigiloso pelo telefone 188.</p>
+    </div>
+  </div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return { dias: [{n:'01'},{n:'02'},{n:'03'},{n:'04'}] };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="omelette-owns-print" content="1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  a{color:#33493C}a:hover{color:#C0894A}
+  .cc-book :where(h1,h2,h3){text-wrap:balance}
+  .cc-book p{text-wrap:pretty}
+  @media print{
+    @page{size:A4;margin:14mm}
+    .cc-desk{background:#fff!important;padding:0!important}
+    .cc-book{box-shadow:none!important;border-radius:0!important;max-width:none!important;margin:0!important}
+    .cc-chapter{break-before:page}
+    .cc-avoid{break-inside:avoid}
+    .cc-hero{height:auto!important;min-height:0!important;break-after:page}
+    img{break-inside:avoid}
+  }
+</style>
+</helmet>
+<div class="cc-desk" style="background:#E7DDCB;font-family:'Nunito Sans',sans-serif;padding:clamp(0px,3vw,40px);min-height:100vh;">
+<div class="cc-book" style="max-width:880px;margin:0 auto;background:#F6F2EB;color:#33493C;border-radius:14px;overflow:hidden;box-shadow:0 24px 60px rgba(51,73,60,.18);">
+
+  <!-- COVER -->
+  <div class="cc-hero" style="position:relative;height:clamp(430px,74vh,620px);display:flex;flex-direction:column;justify-content:flex-end;">
+    <img src="assets/calm-beach.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(51,73,60,.12) 0%,rgba(51,73,60,.30) 46%,rgba(35,52,42,.86) 100%);"></div>
+    <div style="position:relative;padding:clamp(26px,5vw,52px);">
+      <div style="display:flex;align-items:center;gap:10px;color:#F6F2EB;">
+        <span style="font-family:'Fraunces',serif;font-weight:600;letter-spacing:.2em;font-size:clamp(13px,1.6vw,16px);">KORVYN</span>
+        <span style="width:5px;height:5px;border-radius:50%;background:#E0B579;"></span>
+        <span style="font-size:clamp(9px,1.3vw,11px);letter-spacing:.24em;text-transform:uppercase;opacity:.85;">Bônus · Bem-estar Emocional</span>
+      </div>
+      <h1 style="font-family:'Fraunces',serif;font-weight:600;color:#F9F5EE;font-size:clamp(38px,7.2vw,72px);line-height:.98;letter-spacing:-.015em;margin:clamp(14px,2vw,20px) 0 0;">Corpo Calmo</h1>
+      <p style="color:#EDE6D8;font-size:clamp(15px,2.2vw,21px);line-height:1.5;max-width:34ch;margin:clamp(12px,1.6vw,18px) 0 0;">Movimentos suaves e uma rotina diária para <em style="font-style:italic;color:#E9C58E;">baixar a ansiedade</em> — sem treino puxado, sem cobrança.</p>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <div style="padding:clamp(28px,5.2vw,64px) clamp(24px,5.2vw,72px) 0;">
+    <div style="max-width:62ch;">
+      <div style="font-size:clamp(10px,1.4vw,11px);letter-spacing:.28em;font-weight:800;color:#C0894A;text-transform:uppercase;">Antes de começar</div>
+      <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(25px,4.2vw,38px);line-height:1.08;margin:14px 0 0;">Isto não é treino. É regular o seu sistema nervoso.</h2>
+      <p style="font-size:clamp(15px,1.9vw,17.5px);line-height:1.68;margin:18px 0 0;color:#3f4f42;">Quando a ansiedade sobe, o corpo entra em estado de alerta: respiração curta, ombros tensos, mente acelerada. Nesse estado, a vontade de comer por impulso fica muito mais forte. O objetivo aqui não é gastar calorias — é enviar ao seu corpo o sinal de que <strong style="color:#33493C;">está seguro</strong>, para que ele saia do alerta e volte à calma.</p>
+      <p style="font-size:clamp(15px,1.9vw,17.5px);line-height:1.68;margin:14px 0 0;color:#3f4f42;">Os movimentos são lentos e gentis de propósito. Faça no seu ritmo, com roupa confortável, e adapte tudo ao que o seu corpo pede hoje. Se algo causar dor, pare.</p>
+    </div>
+  </div>
+
+  <!-- WHY IT CALMS -->
+  <div class="cc-avoid" style="padding:clamp(26px,4vw,44px) clamp(24px,5.2vw,72px) 0;">
+    <div style="background:#EAEFE6;border:1px solid #dbe3d6;border-radius:18px;padding:clamp(22px,3.4vw,36px);">
+      <h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(19px,2.7vw,25px);margin:0;">Por que o movimento suave acalma</h3>
+      <p style="font-size:clamp(14px,1.7vw,16px);line-height:1.62;margin:12px 0 22px;color:#3f4f42;max-width:70ch;">Dentro de você existe um "freio" natural da ansiedade: o <strong>nervo vago</strong>, que ativa o modo de descanso do corpo (o sistema parassimpático). Respiração lenta e movimentos gentis são a forma mais direta de acioná-lo.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;">
+        <div style="flex:1 1 220px;background:#F6F2EB;border-radius:14px;padding:18px 20px;">
+          <div style="font-family:'Fraunces',serif;font-size:26px;color:#C0894A;line-height:1;">01</div>
+          <div style="font-weight:800;font-size:14.5px;margin:8px 0 5px;">Expiração longa</div>
+          <div style="font-size:13px;line-height:1.5;color:#556356;">Soltar o ar devagar avisa o cérebro que o perigo passou e desacelera os batimentos.</div>
+        </div>
+        <div style="flex:1 1 220px;background:#F6F2EB;border-radius:14px;padding:18px 20px;">
+          <div style="font-family:'Fraunces',serif;font-size:26px;color:#C0894A;line-height:1;">02</div>
+          <div style="font-weight:800;font-size:14.5px;margin:8px 0 5px;">Soltar a tensão</div>
+          <div style="font-size:13px;line-height:1.5;color:#556356;">A ansiedade se acumula em pescoço, mandíbula e ombros. Movê-los descarrega essa carga.</div>
+        </div>
+        <div style="flex:1 1 220px;background:#F6F2EB;border-radius:14px;padding:18px 20px;">
+          <div style="font-family:'Fraunces',serif;font-size:26px;color:#C0894A;line-height:1;">03</div>
+          <div style="font-weight:800;font-size:14.5px;margin:8px 0 5px;">Voltar ao corpo</div>
+          <div style="font-size:13px;line-height:1.5;color:#556356;">Sentir o corpo tira você do turbilhão de pensamentos e interrompe o piloto automático do impulso.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURED: BREATHING -->
+  <div class="cc-avoid" style="padding:clamp(26px,4vw,44px) clamp(24px,5.2vw,72px) 0;">
+    <div style="background:#33493C;color:#EFE9DD;border-radius:18px;padding:clamp(24px,3.6vw,40px);">
+      <div style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#E0B579;font-weight:700;">A base de tudo</div>
+      <h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(22px,3.4vw,32px);margin:10px 0 0;color:#F9F5EE;">Respiração diafragmática 4 · 6</h3>
+      <p style="font-size:clamp(14px,1.7vw,16px);line-height:1.62;margin:12px 0 22px;max-width:60ch;color:#d7ded1;">Se você só puder fazer uma coisa deste guia, faça esta. A expiração mais longa que a inspiração é o atalho mais rápido para a calma.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;">
+        <div style="flex:1 1 160px;background:rgba(255,255,255,.07);border:1px solid rgba(224,181,121,.3);border-radius:12px;padding:16px 18px;">
+          <div style="color:#E0B579;font-weight:800;font-size:13px;margin-bottom:5px;">1 · Mão na barriga</div>
+          <div style="font-size:13px;line-height:1.5;color:#cdd5c8;">Sente-se ou deite. Uma mão no peito, outra na barriga.</div>
+        </div>
+        <div style="flex:1 1 160px;background:rgba(255,255,255,.07);border:1px solid rgba(224,181,121,.3);border-radius:12px;padding:16px 18px;">
+          <div style="color:#E0B579;font-weight:800;font-size:13px;margin-bottom:5px;">2 · Inspire por 4</div>
+          <div style="font-size:13px;line-height:1.5;color:#cdd5c8;">Pelo nariz, contando até 4. A barriga sobe — o peito quase não se move.</div>
+        </div>
+        <div style="flex:1 1 160px;background:rgba(255,255,255,.07);border:1px solid rgba(224,181,121,.3);border-radius:12px;padding:16px 18px;">
+          <div style="color:#E0B579;font-weight:800;font-size:13px;margin-bottom:5px;">3 · Expire por 6</div>
+          <div style="font-size:13px;line-height:1.5;color:#cdd5c8;">Solte o ar bem devagar, contando até 6, como se embaçasse um espelho.</div>
+        </div>
+        <div style="flex:1 1 160px;background:rgba(255,255,255,.07);border:1px solid rgba(224,181,121,.3);border-radius:12px;padding:16px 18px;">
+          <div style="color:#E0B579;font-weight:800;font-size:13px;margin-bottom:5px;">4 · Repita 6×</div>
+          <div style="font-size:13px;line-height:1.5;color:#cdd5c8;">Cerca de um minuto. Já é suficiente para o corpo começar a desacelerar.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MORNING ROUTINE -->
+  <div class="cc-chapter" style="padding:clamp(30px,5vw,58px) clamp(24px,5.2vw,72px) 0;">
+    <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;">
+      <span style="font-family:'Fraunces',serif;font-size:clamp(30px,5vw,46px);color:#C0894A;line-height:1;">☀</span>
+      <div>
+        <div style="font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:#C0894A;font-weight:800;">Rotina da manhã · 5 minutos</div>
+        <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(24px,4vw,36px);margin:6px 0 0;line-height:1.05;">Ancore o dia antes que a ansiedade tome conta</h2>
+      </div>
+    </div>
+    <p style="font-size:clamp(14px,1.7vw,16.5px);line-height:1.62;margin:16px 0 0;color:#3f4f42;max-width:66ch;">Feito ainda de pijama, antes do celular. A ideia é começar o dia regulada — e não correndo atrás do prejuízo depois que a ansiedade já subiu.</p>
+    <div style="display:flex;flex-direction:column;gap:14px;margin-top:24px;">
+      <!-- step -->
+      <div class="cc-avoid" style="display:flex;gap:16px;align-items:flex-start;background:#EAEFE6;border:1px solid #dbe3d6;border-radius:14px;padding:18px 20px;">
+        <div style="flex-shrink:0;width:42px;height:42px;border-radius:50%;background:#33493C;color:#F6F2EB;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:19px;">1</div>
+        <div><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline;"><span style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(16px,2.1vw,19px);">Respiração 4·6</span><span style="font-size:12px;color:#8a9384;font-weight:700;">1 min</span></div><div style="font-size:14px;line-height:1.55;color:#4a5a4c;margin-top:5px;">Seis respirações lentas com a expiração longa. Sinta o corpo "descer" uma marcha.</div></div>
+      </div>
+      <div class="cc-avoid" style="display:flex;gap:16px;align-items:flex-start;background:#EAEFE6;border:1px solid #dbe3d6;border-radius:14px;padding:18px 20px;">
+        <div style="flex-shrink:0;width:42px;height:42px;border-radius:50%;background:#33493C;color:#F6F2EB;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:19px;">2</div>
+        <div><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline;"><span style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(16px,2.1vw,19px);">Soltar pescoço e ombros</span><span style="font-size:12px;color:#8a9384;font-weight:700;">1 min</span></div><div style="font-size:14px;line-height:1.55;color:#4a5a4c;margin-top:5px;">Incline a cabeça devagar para cada lado, faça círculos lentos com os ombros para trás. Desfaça a tensão da noite.</div></div>
+      </div>
+      <div class="cc-avoid" style="display:flex;gap:16px;align-items:flex-start;background:#EAEFE6;border:1px solid #dbe3d6;border-radius:14px;padding:18px 20px;">
+        <div style="flex-shrink:0;width:42px;height:42px;border-radius:50%;background:#33493C;color:#F6F2EB;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:19px;">3</div>
+        <div><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline;"><span style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(16px,2.1vw,19px);">Mobilidade de coluna (gato–camelo)</span><span style="font-size:12px;color:#8a9384;font-weight:700;">1 min</span></div><div style="font-size:14px;line-height:1.55;color:#4a5a4c;margin-top:5px;">Em pé ou de quatro, arredonde e depois arqueie as costas no ritmo da respiração. Acorda a coluna com gentileza.</div></div>
+      </div>
+      <div class="cc-avoid" style="display:flex;gap:16px;align-items:flex-start;background:#EAEFE6;border:1px solid #dbe3d6;border-radius:14px;padding:18px 20px;">
+        <div style="flex-shrink:0;width:42px;height:42px;border-radius:50%;background:#33493C;color:#F6F2EB;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:19px;">4</div>
+        <div><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline;"><span style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(16px,2.1vw,19px);">Abrir o peito</span><span style="font-size:12px;color:#8a9384;font-weight:700;">1 min</span></div><div style="font-size:14px;line-height:1.55;color:#4a5a4c;margin-top:5px;">Entrelace as mãos atrás do corpo e abra o peito, respirando fundo. Contrapõe a postura fechada da ansiedade.</div></div>
+      </div>
+      <div class="cc-avoid" style="display:flex;gap:16px;align-items:flex-start;background:#EAEFE6;border:1px solid #dbe3d6;border-radius:14px;padding:18px 20px;">
+        <div style="flex-shrink:0;width:42px;height:42px;border-radius:50%;background:#33493C;color:#F6F2EB;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:19px;">5</div>
+        <div><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline;"><span style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(16px,2.1vw,19px);">Uma intenção para o dia</span><span style="font-size:12px;color:#8a9384;font-weight:700;">1 min</span></div><div style="font-size:14px;line-height:1.55;color:#4a5a4c;margin-top:5px;">De olhos fechados, escolha uma frase simples: "hoje eu cuido de mim com calma". Leve-a com você.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NIGHT ROUTINE -->
+  <div class="cc-chapter" style="padding:clamp(30px,5vw,58px) clamp(24px,5.2vw,72px) 0;">
+    <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;">
+      <span style="font-family:'Fraunces',serif;font-size:clamp(30px,5vw,46px);color:#7d8a9c;line-height:1;">☾</span>
+      <div>
+        <div style="font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:#8a7a5c;font-weight:800;">Rotina da noite · 5 minutos</div>
+        <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(24px,4vw,36px);margin:6px 0 0;line-height:1.05;">Descarregue o dia para não comer por ansiedade à noite</h2>
+      </div>
+    </div>
+    <p style="font-size:clamp(14px,1.7vw,16.5px);line-height:1.62;margin:16px 0 0;color:#3f4f42;max-width:66ch;">A noite é quando a tensão acumulada cobra a conta — muitas vezes na cozinha. Este ritual solta o dia do corpo antes que ele vire fome emocional ou insônia.</p>
+    <div style="display:flex;flex-direction:column;gap:14px;margin-top:24px;">
+      <div class="cc-avoid" style="display:flex;gap:16px;align-items:flex-start;background:#ECEAE3;border:1px solid #dcd7c9;border-radius:14px;padding:18px 20px;">
+        <div style="flex-shrink:0;width:42px;height:42px;border-radius:50%;background:#5a6472;color:#F6F2EB;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:19px;">1</div>
+        <div><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline;"><span style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(16px,2.1vw,19px);">Suspiro fisiológico ×3</span><span style="font-size:12px;color:#9a927e;font-weight:700;">1 min</span></div><div style="font-size:14px;line-height:1.55;color:#4a4f47;margin-top:5px;">Inspire pelo nariz, e no topo puxe mais um pouquinho de ar; depois solte tudo pela boca, longo. Três vezes. Descarrega a tensão rápido.</div></div>
+      </div>
+      <div class="cc-avoid" style="display:flex;gap:16px;align-items:flex-start;background:#ECEAE3;border:1px solid #dcd7c9;border-radius:14px;padding:18px 20px;">
+        <div style="flex-shrink:0;width:42px;height:42px;border-radius:50%;background:#5a6472;color:#F6F2EB;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:19px;">2</div>
+        <div><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline;"><span style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(16px,2.1vw,19px);">Soltar mandíbula e ombros</span><span style="font-size:12px;color:#9a927e;font-weight:700;">1 min</span></div><div style="font-size:14px;line-height:1.55;color:#4a4f47;margin-top:5px;">Afrouxe a mandíbula, deixe a língua descolar do céu da boca, e deixe os ombros "caírem". A gente segura o dia inteiro sem perceber.</div></div>
+      </div>
+      <div class="cc-avoid" style="display:flex;gap:16px;align-items:flex-start;background:#ECEAE3;border:1px solid #dcd7c9;border-radius:14px;padding:18px 20px;">
+        <div style="flex-shrink:0;width:42px;height:42px;border-radius:50%;background:#5a6472;color:#F6F2EB;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:19px;">3</div>
+        <div><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline;"><span style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(16px,2.1vw,19px);">Dobra suave para frente</span><span style="font-size:12px;color:#9a927e;font-weight:700;">1 min</span></div><div style="font-size:14px;line-height:1.55;color:#4a4f47;margin-top:5px;">Sentada ou em pé, desça o tronco devagar com os joelhos soltos e deixe a cabeça pesar. Alonga as costas e acalma a mente.</div></div>
+      </div>
+      <div class="cc-avoid" style="display:flex;gap:16px;align-items:flex-start;background:#ECEAE3;border:1px solid #dcd7c9;border-radius:14px;padding:18px 20px;">
+        <div style="flex-shrink:0;width:42px;height:42px;border-radius:50%;background:#5a6472;color:#F6F2EB;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:19px;">4</div>
+        <div><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline;"><span style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(16px,2.1vw,19px);">Pernas na parede + respiração longa</span><span style="font-size:12px;color:#9a927e;font-weight:700;">2 min</span></div><div style="font-size:14px;line-height:1.55;color:#4a4f47;margin-top:5px;">Deite e apoie as pernas na parede (ou na cama). Respire devagar e, a cada expiração, solte um pouco mais o dia. Se vier um pensamento, deixe passar.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MICRO-PAUSES -->
+  <div class="cc-chapter" style="padding:clamp(30px,5vw,58px) clamp(24px,5.2vw,72px) 0;">
+    <div style="font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:#C0894A;font-weight:800;">Micro-pausas · 2 minutos</div>
+    <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(24px,4vw,36px);margin:8px 0 0;line-height:1.05;max-width:20ch;">Quando a ansiedade sobe no meio do dia</h2>
+    <p style="font-size:clamp(14px,1.7vw,16.5px);line-height:1.62;margin:16px 0 0;color:#3f4f42;max-width:66ch;">Aquele pico de "preciso de algo agora" — que quase sempre aponta para a cozinha. Antes de comer no automático, experimente uma destas. Duas vezes em dez você vai perceber que não era fome.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:24px;">
+      <div class="cc-avoid" style="flex:1 1 240px;background:#EAEFE6;border:1px solid #dbe3d6;border-radius:16px;padding:20px 22px;">
+        <div style="font-family:'Fraunces',serif;font-size:22px;color:#C0894A;">✦</div>
+        <div style="font-family:'Fraunces',serif;font-weight:600;font-size:18px;margin:8px 0 6px;">Suspiro fisiológico ×3</div>
+        <div style="font-size:13.5px;line-height:1.55;color:#4a5a4c;">A forma mais rápida de baixar a intensidade. Duas inspirações curtas pelo nariz, uma expiração longa pela boca.</div>
+      </div>
+      <div class="cc-avoid" style="flex:1 1 240px;background:#EAEFE6;border:1px solid #dbe3d6;border-radius:16px;padding:20px 22px;">
+        <div style="font-family:'Fraunces',serif;font-size:22px;color:#C0894A;">✦</div>
+        <div style="font-family:'Fraunces',serif;font-weight:600;font-size:18px;margin:8px 0 6px;">Ancoragem 5·4·3·2·1</div>
+        <div style="font-size:13.5px;line-height:1.55;color:#4a5a4c;">Nomeie 5 coisas que vê, 4 que ouve, 3 que toca, 2 que cheira, 1 que sente. Traz você para o presente.</div>
+      </div>
+      <div class="cc-avoid" style="flex:1 1 240px;background:#EAEFE6;border:1px solid #dbe3d6;border-radius:16px;padding:20px 22px;">
+        <div style="font-family:'Fraunces',serif;font-size:22px;color:#C0894A;">✦</div>
+        <div style="font-family:'Fraunces',serif;font-weight:600;font-size:18px;margin:8px 0 6px;">Auto-abraço com pressão</div>
+        <div style="font-size:13.5px;line-height:1.55;color:#4a5a4c;">Cruze os braços e faça uma leve pressão nos ombros por 20 segundos. O toque firme sinaliza segurança ao sistema nervoso.</div>
+      </div>
+      <div class="cc-avoid" style="flex:1 1 240px;background:#EAEFE6;border:1px solid #dbe3d6;border-radius:16px;padding:20px 22px;">
+        <div style="font-family:'Fraunces',serif;font-size:22px;color:#C0894A;">✦</div>
+        <div style="font-family:'Fraunces',serif;font-weight:600;font-size:18px;margin:8px 0 6px;">Água + alongar os braços</div>
+        <div style="font-size:13.5px;line-height:1.55;color:#4a5a4c;">Beba um copo de água devagar e alongue os braços para o alto. Ganha tempo entre o impulso e a ação.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <div class="cc-avoid" style="margin-top:clamp(34px,5vw,64px);position:relative;">
+    <div style="position:relative;height:clamp(300px,42vh,420px);">
+      <img src="assets/pointing.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:60% 30%;">
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(35,52,42,.32),rgba(35,52,42,.82));"></div>
+      <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:clamp(24px,5vw,48px);">
+        <div style="font-family:'Fraunces',serif;font-size:26px;color:#E0B579;line-height:1;">&#10086;</div>
+        <p style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;color:#F9F5EE;font-size:clamp(20px,3vw,30px);line-height:1.35;max-width:24ch;margin:14px 0 0;">Você não precisa de mais força de vontade. Precisa de um corpo que se sente seguro.</p>
+        <div style="width:46px;height:2px;background:#E0B579;margin:22px auto 0;border-radius:2px;"></div>
+        <div style="font-family:'Fraunces',serif;font-weight:600;letter-spacing:.2em;color:#EDE6D8;font-size:14px;margin-top:20px;">KORVYN</div>
+      </div>
+    </div>
+    <div style="padding:clamp(20px,3vw,30px) clamp(24px,5.2vw,72px);">
+      <p style="font-size:11px;line-height:1.5;color:#8a9384;margin:0;max-width:80ch;">Material educativo de bem-estar. Não substitui acompanhamento médico, fisioterapêutico ou psicológico. Ao sentir dor, tontura ou desconforto, interrompa e procure orientação profissional. Adapte os movimentos às suas condições individuais.</p>
+    </div>
+  </div>
+
+</div>
+</div>
+</x-dc>
+</body>
+</html>
